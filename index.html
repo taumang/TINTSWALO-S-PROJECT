@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Law Landing Page</title>
+  <!-- Include Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <!-- Include Botpress Chatbot -->
+  <script src="https://cdn.jsdelivr.net/npm/botpress-webchat@3.6.0/dist/index.js"></script>
+</head>
+
+<body class="bg-gray-100">
+  <!-- Hero Section -->
+  <section class="bg-blue-600 text-white py-16">
+    <div class="container mx-auto text-center">
+      <h1 class="text-4xl font-bold mb-4">Welcome to our Law Firm</h1>
+      <p class="text-lg mb-8">We provide professional legal services</p>
+      <!-- Botpress Chatbot Integration -->
+      <div id="botpress-webchat">
+        <script src="https://cdn.botpress.cloud/webchat/v0/inject.js"></script>
+<script src="https://mediafiles.botpress.cloud/1506b9f7-5af9-45aa-b8d3-de42e00d29ae/webchat/config.js" defer></script>
+      </div>
+    </div>
+  </section>
+
+    <!-- <script>
+    window.addEventListener('load', function () {
+      const webchat = new WebChat.default({
+        host: 'https://cdn.botpress.cloud/webchat/v0', // Replace with your Botpress server URL
+        botId: '1506b9f7-5af9-45aa-b8d3-de42e00d29ae', // Replace with your Botpress bot ID
+        embed: true,
+        container: document.querySelector('#botpress-webchat')
+      });
+      webchat.on('sendText', function (text) {
+        // Handle user message
+        console.log('User message:', text);
+      });
+      webchat.on('receiveText', function (text) {
+        // Handle bot response
+        console.log('Bot response:', text);
+      });
+    });
+  </script> -->
+</body>
+</html>
